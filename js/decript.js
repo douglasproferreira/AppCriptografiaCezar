@@ -28,17 +28,16 @@ function criptografarTexto(c) {
     let texto = capturarElemento('.texto').value.toLowerCase();
     console.log(texto)
     console.log(texto.length)
-    event.preventDefault();
     for (let i = 0; i < texto.length; i++) {
         if (texto[i] != " ") {
             for (let j = 0; j < alfabeto.length; j++) {
                 if (texto[i] == alfabeto[j]) {
-                    let pos = j - ch;
-                    if (pos <= 0) {
+                    pos = ch;
+                    if (pos > 26) {
                         res = alfabeto[j];
                         resultado += res;
                     } else {
-                        res = alfabeto[pos];
+                        res = alfabeto[(j + ch)];
                         resultado += res;
                     }
                 }
