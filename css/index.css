@@ -27,7 +27,7 @@ header {
     left: 0;
     width: 50%;
     height: calc(100vh - 110px);
-    background: #20b2aa;
+    background: #00607e;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
@@ -82,6 +82,7 @@ header {
 }
 
 .result .textCript{
+    margin-bottom: 100px;
     flex-grow: 1;
     text-align: center;
 }
