@@ -1,0 +1,53 @@
+body{
+    background: url(../img/back.png);
+    background-size: cover;
+}
+.navbar {
+    background: rgba(0, 0, 0, 0.103);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    height: 55px;
+    width: 100%;
+    margin: 0;
+}
+
+.card{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.back{
+    margin:0;
+    height: 400px;
+}
+
+.titulo p{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.container .rigth {
+    margin-right: 25px;
+}
+
+footer {
+    background: rgba(0, 2, 2, 0.829);
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    bottom: 0;
+    margin: 0;
+    padding-top: 15px;
+}
