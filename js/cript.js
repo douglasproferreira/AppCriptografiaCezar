@@ -35,12 +35,10 @@ function criptografarTexto(c) {
                     let pos = ((j + ch) % 26);
                     res = alfabeto[pos];
                     resultado += res;
-                } else {
-                    res = " ";
-                    resultado += res;
                 }
             }
-        } else {
+        }
+        else {
             res = " ";
             resultado += res;
         }
@@ -53,5 +51,5 @@ function mostrarnaTela(resultado) {
     let conteudo = document.createTextNode(resultado)
     p.appendChild(conteudo)
     p.className = ('textCript')
-    capturarElemento('.result').appendChild(p)
+    capturarElemento('.res').appendChild(p)
 }

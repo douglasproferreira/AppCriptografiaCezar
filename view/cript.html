@@ -17,7 +17,7 @@
     <div class="conteiner">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light ">
-                <a class="navbar-brand" href="#">Criptografia de César</a>
+                <a class="navbar-brand" href="./home.html">Criptografia de César</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,25 +37,31 @@
             <div class="form-group">
                 <label for="exampleInputEmail1" class="color">Digite o texto</label>
                 <textarea class="form-control texto" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <small id="ipHelp" class="form-text text-muted">Digite o texto para Criptografia.</small>
+                <small class="black">Digite o texto para Criptografia.</small>
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1" class="color">Chave</label>
                 <input type="text" class="form-control chave" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Chave...">
-                <small id="ipHelp" class="form-text text-muted">Chave de Criptografia (Número entre 1 e 25)</small>
+                <small class="black">Chave de Criptografia (Número entre 1 e 25)</small>
             </div>
             <button type="submit" class="btn-primary form-control">Criptografar</button>
         </form>
 
         <section class="result">
-
+            <div class="res">
+                <h1>Resultado - Criptografia</h1>
+            </div>
+            <div class="res">
+                <!-- Aqui vai a criptografia -->
+            </div>
         </section>
     </div>
 
     <footer>
         <p>&copy;Criptografando Inc.</p>
     </footer>
+
     <script src="../js/cript.js"></script>
 </body>
 

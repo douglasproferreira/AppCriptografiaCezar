@@ -6,7 +6,6 @@ function capturarElemento(ref) {
 
 const descriptografar = capturarElemento('form');
 descriptografar.addEventListener('submit', function (event) {
-    console.log(criptografar)
     verificarChave();
     event.preventDefault();
 }, false)
@@ -53,5 +52,5 @@ function mostrarnaTela(resultado) {
     let conteudo = document.createTextNode(resultado)
     p.appendChild(conteudo)
     p.className = ('textCript')
-    capturarElemento('.result').appendChild(p)
+    capturarElemento('.res').appendChild(p)
 }
