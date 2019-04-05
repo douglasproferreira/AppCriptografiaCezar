@@ -4,8 +4,8 @@ function capturarElemento(ref) {
     return elemento;
 }
 
-const criptografar = capturarElemento('form');
-criptografar.addEventListener('submit', function (event) {
+const descriptografar = capturarElemento('form');
+descriptografar.addEventListener('submit', function (event) {
     console.log(criptografar)
     verificarChave();
     event.preventDefault();
@@ -19,10 +19,10 @@ function verificarChave() {
         alert("Chave Inválida - Informe uma chave entre 1 e 26");
         inner.HTML();
     } else {
-        criptografarTexto(c)
+        descriptografarTexto(c)
     }
 }
-function criptografarTexto(c) {
+function descriptografarTexto(c) {
     let ch = parseInt(c);
     let res = "", resultado = "";
     let texto = capturarElemento('.texto').value.toLowerCase();
@@ -33,14 +33,14 @@ function criptografarTexto(c) {
             for (let j = 0; j < alfabeto.length; j++) {
                 if (texto[i] == alfabeto[j]) {
                     let pos = ((j - ch) % 26);
+                    if (pos < 0) {
+                        pos = (26 + pos);
+                    }
                     res = alfabeto[pos];
-                    resultado += res;
-                } else {
-                    res = " ";
                     resultado += res;
                 }
             }
-        } else {
+        } else if (texto[i] == " ") {
             res = " ";
             resultado += res;
         }
